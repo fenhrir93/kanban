@@ -4,6 +4,16 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": [
+        "app/components/*"
+      ],
+      "@services/*": [
+        "app/services/*"
+      ]
+    },
+  
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
